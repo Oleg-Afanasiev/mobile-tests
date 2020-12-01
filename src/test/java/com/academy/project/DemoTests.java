@@ -18,6 +18,11 @@ public class DemoTests extends BaseTest {
                 .getName();
 
         Assert.assertEquals(actualName, expectedName);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @DataProvider(name="testDataProvider")
